@@ -1,5 +1,4 @@
 import card from "./card.png";
-import send from "./Send.svg";
 import menu from "./menu.svg";
 import arrowUp from "./arrow-up.svg";
 import bookcover from "./bookcover.png";
@@ -11,7 +10,6 @@ import cocobunny from "./cocobunny.png";
 
 export {
   card,
-  send,
   menu,
   arrowUp,
   cocobunny,
