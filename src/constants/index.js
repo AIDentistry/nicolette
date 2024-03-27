@@ -5,7 +5,6 @@ import {
   youtube,
   bunnyschool,
   podcast,
-  send,
 } from "../assets";
 
 export const navLinks = [
@@ -52,7 +51,7 @@ export const services = [
   },
   {
     id: "feature-3",
-    icon: send,
+    icon: "",
     title: "For Groups / Stokvels",
     content:
       "Financial literacy workshops and seminars,  investment education sessions, Retirement planning masterclasses, Real estate investment",
@@ -76,7 +75,7 @@ export const products = [
   },
   {
     id: "feature-3",
-    icon: send,
+    icon: "",
     title: "YouTube Channel",
     content:
       "Financial literacy workshops and seminars,  investment education sessions, Retirement planning masterclasses, Real estate investment",
@@ -84,7 +83,7 @@ export const products = [
 
   {
     id: "feature-4",
-    icon: send,
+    icon: "",
     title: "Yes Money Does Matter (Podcast)",
     content:
       "Financial literacy workshops and seminars,  investment education sessions, Retirement planning masterclasses, Real estate investment",
