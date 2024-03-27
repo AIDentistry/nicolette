@@ -1,5 +1,4 @@
 import Navbar from "./Navbar";
-import Billing from "./Billing";
 import CardDeal from "./CardDeal";
 import OurServices from "./OurServices";
 import OurProducts from "./OurProducts";
@@ -14,7 +13,6 @@ import GetInTouch from "./GetInTouch";
 
 export {
   Navbar,
-  Billing,
   CardDeal,
   OurServices,
   OurProducts,

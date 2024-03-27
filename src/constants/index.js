@@ -5,17 +5,7 @@ import {
   youtube,
   bunnyschool,
   podcast,
-  facebook,
-  instagram,
-  linkedin,
-  twitter,
-  airbnb,
-  binance,
-  coinbase,
-  dropbox,
   send,
-  shield,
-  star,
 } from "../assets";
 
 export const navLinks = [
@@ -40,7 +30,7 @@ export const navLinks = [
 export const services = [
   {
     id: "feature-1",
-    icon: star,
+    icon: "",
     title: "For Businesses",
     content:
       "Financial Planning & Strategic Investments, Employees Coaching, Capital Restructuring And Debt Management, ",
@@ -48,14 +38,14 @@ export const services = [
 
   {
     id: "feature-1",
-    icon: star,
+    icon: "",
     title: "Training Facilitator",
     content:
       "Financial Planning & Strategic Investments, Employees Coaching, Capital Restructuring And Debt Management, ",
   },
   {
     id: "feature-2",
-    icon: shield,
+    icon: "",
     title: "For Individuals / Families",
     content:
       "Personalized Financial Planning, Investment Strategies & Opportunities, Debt management and reduction strategies, Lifestyle financial planning and budgeting assistance ",
@@ -72,14 +62,14 @@ export const services = [
 export const products = [
   {
     id: "feature-1",
-    icon: star,
+    icon: "",
     title: "Coco The Money Bunny",
     content:
       "Financial Planning & Strategic Investments, Employees Coaching, Capital Restructuring And Debt Management, ",
   },
   {
     id: "feature-2",
-    icon: shield,
+    icon: "",
     title: "Financial Bunny School",
     content:
       "Personalized Financial Planning, Investment Strategies & Opportunities, Debt management and reduction strategies, Lifestyle financial planning and budgeting assistance ",
@@ -102,7 +92,7 @@ export const products = [
 
   {
     id: "feature-5",
-    icon: shield,
+    icon: "",
     title: "What's Your Move? (Book)",
     content:
       "Personalized Financial Planning, Investment Strategies & Opportunities, Debt management and reduction strategies, Lifestyle financial planning and budgeting assistance ",
@@ -248,22 +238,22 @@ export const footerLinks = [
 export const socialMedia = [
   {
     id: "social-media-1",
-    icon: instagram,
+    icon: "",
     link: "https://www.instagram.com/",
   },
   {
     id: "social-media-2",
-    icon: facebook,
+    icon: "",
     link: "https://www.facebook.com/",
   },
   {
     id: "social-media-3",
-    icon: twitter,
+    icon: "",
     link: "https://www.twitter.com/",
   },
   {
     id: "social-media-4",
-    icon: linkedin,
+    icon: "",
     link: "https://www.linkedin.com/",
   },
 ];
@@ -271,18 +261,18 @@ export const socialMedia = [
 export const clients = [
   {
     id: "client-1",
-    logo: airbnb,
+    logo: "",
   },
   {
     id: "client-2",
-    logo: binance,
+    logo: "",
   },
   {
     id: "client-3",
-    logo: coinbase,
+    logo: "",
   },
   {
     id: "client-4",
-    logo: dropbox,
+    logo: "",
   },
 ];
