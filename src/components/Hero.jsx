@@ -1,8 +1,6 @@
 import React from "react";
-import { DotLottiePlayer } from "@dotlottie/player-component";
 import styles from "../style";
 import GetStarted from "./GetStarted";
-import AnimationContainer from "../constants/AnimationContainer";
 import NicoletteVideo from "./NicoletteVideo";
 
 {
