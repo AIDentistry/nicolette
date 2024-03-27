@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "main": "main.jsx",
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -33,5 +33,6 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.6"
-  }
+  },
+  "main": "src/main.jsx"
 }
