@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="list-none sm:flex hidden justify-end items-center flex-1">
         <button
           type="button"
-          className={` rounded-full py-2 px-4 font-normal font-poppins bg-[#08ADC2]  text-[14px] outline-none text-primary`}
+          className={` rounded-full py-2 px-4 font-normal font-poppins bg-red-300 text-[14px] outline-none text-primary`}
         >
           Chat To Me
         </button>
