@@ -4,7 +4,7 @@ import styles from "../style";
 const OurServicesHeading = () => {
   return (
     <section
-      className={`${styles.flexCenter} flex-row flex-wrap sm:mt-20 mt-6`}
+      className={`${styles.flexCenter} flex-row flex-wrap sm:mt-12 mt-6 mb-0`}
     >
       <h1
         className={`${styles.heading1} m-2 font-poppins font-semibold text-[#112E2B] text-center`}

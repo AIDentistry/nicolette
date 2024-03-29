@@ -4,9 +4,9 @@ const Button = ({ styles }) => {
   return (
     <button
       type="button"
-      className={`${styles} rounded-full py-4 px-6 font-medium font-poppins bg-blue-gradient text-[18px] outline-none text-primary`}
+      className={`w-1/2 rounded-full py-4 px-6 font-medium font-poppins bg-blue-gradient text-[18px] outline-none text-primary`}
     >
-      Get Started
+      Chat To Me
     </button>
   );
 };
