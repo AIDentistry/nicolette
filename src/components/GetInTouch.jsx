@@ -15,8 +15,14 @@ const GetInTouch = () => {
   return (
     <section className="flex justify-center flex-col md:flex-row">
       <div className="w-full md:w-1/2 flex items-center justify-center bg-[#08ADC2]  md:mr-4 rounded-xl cursor-default">
-        <h1 className="font-poppins font-semibold text-white mb-4 text-2xl text-center">
-          Meet Lulu, My PA, Just A Click And She's Connecting Us!
+        <h1 className="font-poppins font-semibold text-white mb-4 text-3xl text-center p-8">
+          Meet Lulu, My PA, Just A Click And She's Connecting Us! <br />{" "}
+          <br></br>
+          <span className="font-poppins font-semibold text-white mb-4 text-lg text-center">
+            {" "}
+            Need tips on your loan, mortgage, car financing or anything finance?
+            Ask Lulu!
+          </span>
         </h1>
       </div>
       <motion.div
