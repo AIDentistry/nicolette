@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
 import LottieRobot from "./LottieRobot"; // Import the Lottie animation for the robot
 import Chatbot from "./Chatbot";
+import { BubbleChat } from "flowise-embed-react";
 // Import the Lottie animation for the chatbot
 
 const GetInTouch = () => {
@@ -32,11 +33,12 @@ const GetInTouch = () => {
         </h1>
       </div>
       <motion.div
-        className="w-full md:w-1/2 flex items-center justify-center cursor-pointer"
+        className="w-full md:w-1/2 flex flex-col items-center justify-center cursor-pointer"
         whileTap={{ scale: 0.95 }} // Reduce the scale of the div when tapped
         onClick={toggleChatbot} // Toggle the chatbot when the div is clicked
       >
-        {showChatbot ? <Chatbot /> : <LottieRobot />}
+        <BubbleChat />
+        <LottieRobot />
       </motion.div>
     </section>
   );
