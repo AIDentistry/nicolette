@@ -21,7 +21,7 @@ const Hero = () => (
     className={`flex md:flex-row flex-col justify-between items-start sm:py-4 py-2  ${styles.boxesContainer}`}
   >
     <div
-      className={`md:mr-5 px-8 py-4 max-md:mb-4 w-full h-full rounded-xl bg-red-300 flex flex-col justify-center items-center`}
+      className={`md:mr-5 px-8 py-4 max-md:mb-4 w-full h-full rounded-xl bg-[#08ADC2] flex flex-col justify-center items-center`}
     >
       <p
         className={`${styles.paragraph} font-poppins font-semibold text-white text-center`}
