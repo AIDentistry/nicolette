@@ -19,10 +19,10 @@ const Mindmap = () => {
         Our Services
       </h1>
 
-      <div className="md:h-[420px] md:w-[420px] h-[380px] w-[380px] p-6 relative">
+      <div className="md:h-[420px] md:w-[420px] h-[380px] w-[300px] p-6 relative">
         {/* Four circles placed at each corner */}
         <motion.div
-          className="w-[140px] h-[140px] bg-[#1DAB9F] rounded-full absolute top-0 left-0 flex items-center justify-center"
+          className="md:w-[140px] md:h-[140px] w-[120px] h-[120px] bg-[#1DAB9F] rounded-full absolute top-0 left-0 flex items-center justify-center"
           whileHover={{ scale: 1.2, transition: { duration: 0.3 } }}
           onMouseEnter={() => {
             setHoveredColor("#1DAB9F");
@@ -40,7 +40,7 @@ const Mindmap = () => {
         {/* Remaining small circles */}
         {/* Modify onMouseEnter to set isHovered to true */}
         <motion.div
-          className="w-[140px] h-[140px] bg-[#E38831]  rounded-full absolute top-0 right-0 flex items-center justify-center"
+          className="md:w-[140px] md:h-[140px] w-[120px] h-[120px] bg-[#E38831]  rounded-full absolute top-0 right-0 flex items-center justify-center"
           whileHover={{ scale: 1.2, transition: { duration: 0.3 } }}
           onMouseEnter={() => {
             setHoveredColor("#E38831");
@@ -57,7 +57,7 @@ const Mindmap = () => {
           </p>
         </motion.div>
         <motion.div
-          className="w-[140px] h-[140px] bg-[#08ADC2]  rounded-full absolute bottom-0 left-0 flex items-center justify-center"
+          className="md:w-[140px] md:h-[140px] w-[120px] h-[120px] bg-[#08ADC2]  rounded-full absolute bottom-0 left-0 flex items-center justify-center"
           whileHover={{ scale: 1.2, transition: { duration: 0.3 } }}
           onMouseEnter={() => {
             setHoveredColor("#08ADC2");
@@ -74,7 +74,7 @@ const Mindmap = () => {
           </p>
         </motion.div>
         <motion.div
-          className="w-[140px] h-[140px] bg-[#B52A86] rounded-full absolute bottom-0 right-0 flex items-center justify-center" // Added flexbox utility classes
+          className="md:w-[140px] md:h-[140px] w-[120px] h-[120px] bg-[#B52A86] rounded-full absolute bottom-0 right-0 flex items-center justify-center" // Added flexbox utility classes
           whileHover={{ scale: 1.2, transition: { duration: 0.3 } }}
           onMouseEnter={() => {
             setHoveredColor("#B52A86");
@@ -93,10 +93,13 @@ const Mindmap = () => {
 
         {/* Bigger circle in the center */}
         <motion.div
-          className="md:w-[250px] md:h-[250px] h-[200px] w-[200px] rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+          className="md:w-[250px] md:h-[250px] h-[160px] w-[160px] rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
           style={
             hoveredColor === null
-              ? { backgroundImage: `url(${mainCircleColor})` }
+              ? {
+                  backgroundImage: `url(${mainCircleColor})`,
+                  backgroundSize: "cover", // Ensure the background image covers the container
+                }
               : { backgroundColor: hoveredColor }
           }
         >

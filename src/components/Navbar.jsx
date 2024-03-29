@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { menu } from "../assets";
 import { navLinks } from "../constants";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -13,17 +14,25 @@ const Navbar = () => {
         {/* <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" /> */}
       </div>
 
-      <ul className="list-none sm:flex hidden justify-center items-center flex-1">
+      <ul className="flex">
         {navLinks.map((nav, index) => (
-          <li
+          <motion.li
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[14px] ${
               active === nav.title ? "text-gray-900" : "text-gray-900"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-5"}`}
+            whileHover={{
+              backgroundColor: "#08ADC2",
+              padding: "8px 16px",
+              color: "white",
+              borderRadius: "9999px",
+              boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
+              scale: "0px"
+            }}
             onClick={() => setActive(nav.title)}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
-          </li>
+          </motion.li>
         ))}
       </ul>
 
@@ -33,7 +42,7 @@ const Navbar = () => {
           className={` rounded-full py-2 px-4 font-normal font-poppins git add .
 git commit -m "Added functionality to display chatbot when clicking the second div"
 git push origin master
- text-[14px] outline-none text-primary`}
+ text-[14px] outline-none text-primary bg-[#08ADC2]`}
         >
           Chat To Me
         </button>

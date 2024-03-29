@@ -20,8 +20,14 @@ const GetInTouch = () => {
           <br></br>
           <span className="font-poppins font-semibold text-white mb-4 text-lg text-center">
             {" "}
-            Need tips on your loan, mortgage, car financing or anything finance?
-            Ask Lulu!
+            Need tips? Lulu can help you with:
+            <ul>
+              <br></br>
+              <li>How to finish your bond repayments faster</li>
+              <li>To Balloon payment or NOT to Balloon?</li>
+              <li>Tips for South African home buyers</li>
+              <li>How to get that raise</li>
+            </ul>
           </span>
         </h1>
       </div>

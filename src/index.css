@@ -160,4 +160,7 @@
   filter: blur(750px);
 }
 
-
+.listItems:hover {
+  background-color: #03b7d0;
+  padding: 0.2rem;
+}
