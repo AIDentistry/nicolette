@@ -11,7 +11,7 @@
 const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
   boxesContainer:
-    "xl:w-full xl:h-[1000px] lg:w-full lg:h-[360px] md:w-full md:h-[300px] sm:w-full sm:h-[800px] ss:w-full ss:h-[900px] xs:w-full xs:h-[700px] xxs:w-full xxs:h-[700px] w-full h-[700px]",
+    "xl:w-full xl:h-[1000px] lg:w-full lg:h-[360px] md:w-full md:h-[300px] sm:w-full sm:h-[700px] ss:w-full ss:h-[900px] xs:w-full xs:h-[600px] xxs:w-full xxs:h-[500px] w-full h-[500px]",
   heading1:
     "font-poppins font-semibold lg:text-[42px] md:text-[32px] sm:text-[42px] ss:text-[32px] text-[28px] lg:leading-[52px] md:leading-[46px] sm:leading-[42px] ss:leading-[36px] leading-[32px]",
   paragraph:
@@ -34,10 +34,10 @@ const styles = {
 
 export const layout = {
   section: `flex md:flex-row flex-col ${styles.paddingY}`,
-  sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY} justify-center max-md:items-center items-start`,
+  sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY} justify-center max-md:items-center items-center`,
 
   sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
-  sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
+  sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-8 ml-0 md:mt-0 mt-4 relative`,
 
   sectionInfo: `flex-1 ${styles.flexCenter} flex-col`,
 };

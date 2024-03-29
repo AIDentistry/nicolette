@@ -2,27 +2,37 @@ import PropTypes from "prop-types";
 import { services } from "../constants";
 import styles from "../style";
 
-const FeatureCard = ({ icon, title, content, index }) => (
-  <div
-    className={`flex flex-row p-4 rounded-[10px] ${
-      index !== services.length - 1 ? "mb-6" : "mb-0"
-    } feature-card bg-[#DFF1E6] text-[#112E2B]`}
-  >
+const FeatureCard = ({ icon, title, content, index }) => {
+  const contentItems = content.split(",").map((item, i) => (
+    <span key={i} className="big-dot">
+      {item}
+    </span>
+  ));
+
+  return (
     <div
-      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+      className={`flex flex-row p-2 rounded-2xl ${
+        index !== services.length - 1 ? "mb-2" : "mb-0"
+      } feature-card bg-[#1DAB9F] text-white`}
     >
-      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
+      <div
+        className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+      >
+        <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
+      </div>
+      <div className="flex-1 flex flex-col ml-3">
+        <h4 className="font-poppins font-semibold text-[18px] leading-[23.4px] mb-3">
+          {title}
+        </h4>
+        <div className="flex-1 flex flex-col">
+          <p className="font-poppins font-semibold text-sm leading-[24px]">
+            {contentItems}
+          </p>
+        </div>
+      </div>
     </div>
-    <div className="flex-1 flex flex-col ml-3">
-      <h4 className="font-poppins font-semibold text-[18px] leading-[23.4px] mb-1">
-        {title}
-      </h4>
-      <p className="font-poppins font-normal text-[16px] leading-[24px]">
-        {content}
-      </p>
-    </div>
-  </div>
-);
+  );
+};
 
 FeatureCard.propTypes = {
   icon: PropTypes.node,

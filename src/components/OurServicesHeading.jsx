@@ -9,7 +9,7 @@ const OurServicesHeading = () => {
       <h1
         className={`${styles.heading1} m-2 font-poppins font-semibold text-[#112E2B] text-center`}
       >
-        Our Services
+        Get In Touch
       </h1>
     </section>
   );

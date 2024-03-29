@@ -13,11 +13,12 @@ import {
   Clients,
   Cta,
   Footer,
+  Mindmap,
 } from "./components";
 
 const App = () => {
   return (
-    <div className="bg-primary w-[100%] overflow-hidden h-[100%]">
+    <div className="bg-[#EBFFFD] w-[100%] overflow-hidden h-[100%]">
       {/* {Navigation bar} */}
       <div
         className={`${style.paddingX} ${style.paddingX} ${style.flexCenter} bg-white`}
@@ -38,7 +39,7 @@ const App = () => {
 
       <div className={`bg-primary ${style.flexStart} ${style.paddingX}`}>
         <div className={`${style.boxWidth}`}>
-          <OurServicesHeading /> <OurServices /> <OurProductsHeading />
+          <OurServices />
           <OurProducts />
           <OurServicesHeading />
           <GetInTouch />

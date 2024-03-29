@@ -107,9 +107,15 @@
 }
 
 .feature-card:hover {
-  background-color: #112e2b;
-  color: white;
   box-shadow: var(--card-shadow);
+}
+
+/* MyComponent.css */
+.big-dot::before {
+  content: "•";
+  font-size: 1.5rem; /* Adjust the size as needed */
+  margin-right: 0.5rem; /* Adjust spacing as desired */
+  margin-left: 0.5rem;
 }
 
 .feedback-container .feedback-card:last-child {
@@ -153,3 +159,5 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+

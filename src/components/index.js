@@ -10,6 +10,7 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import GetInTouch from "./GetInTouch";
+import Mindmap from "./Mindmap";
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   Testimonials,
   Hero,
   GetInTouch,
+  Mindmap,
 };

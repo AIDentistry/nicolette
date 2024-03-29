@@ -54,7 +54,7 @@ const FeedbackCard = ({ title, content, img }) => {
     >
       {isHovered && (
         <motion.div
-          className="textContainer flex justify-center items-center h-full w-full bg-[#112E2B] rounded-2xl mt-0 shadow-2xl shadow-black"
+          className="textContainer flex justify-center items-center h-full w-full bg-[#08ADC2] rounded-2xl mt-0 shadow-2xl shadow-black"
           variants={textVariants}
           initial="hidden"
           animate={isHovered ? "visible" : "hidden"}
@@ -67,7 +67,7 @@ const FeedbackCard = ({ title, content, img }) => {
               <div className="body font-poppins text-center text-[0.8rem] leading-4 text-white">
                 {content}
               </div>
-              <button className="button bg-[#DFF1E6] rounded-xl text-[0.8rem] h-8 mt-[0.8rem]">
+              <button className="button bg-[#DFF1E6] rounded-2xl text-[0.8rem] h-8 mt-[0.8rem]">
                 See More
               </button>
             </div>
@@ -76,14 +76,10 @@ const FeedbackCard = ({ title, content, img }) => {
       )}
 
       {!isHovered && (
-        <div className="flex-row justify-center items-center h-full w-full rounded-2xl">
+        <div className="flex-row justify-center items-center h-full w-full rounded-2xl mt-2">
           <div>
             <img src={img} className="flex-1 h-[10rem] w-full rounded-2xl" />
           </div>
-
-          <label className="flex flex-1 h-[3rem] w-full bg-[#112E2B] font-semibold text-sm font-poppins text-white justify-center items-center text-center">
-            {title}
-          </label>
         </div>
       )}
     </motion.div>

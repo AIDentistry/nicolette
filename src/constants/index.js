@@ -1,3 +1,5 @@
+import React from "react";
+
 import {
   bookcover,
   cocobunny,
@@ -32,7 +34,7 @@ export const services = [
     icon: "",
     title: "For Businesses",
     content:
-      "Financial Planning & Strategic Investments, Employees Coaching, Capital Restructuring And Debt Management, ",
+      "Financial Planning & Strategic Investments, Employees Coaching, Capital-Restructuring And Debt Management, ",
   },
 
   {
@@ -40,21 +42,21 @@ export const services = [
     icon: "",
     title: "Training Facilitator",
     content:
-      "Financial Planning & Strategic Investments, Employees Coaching, Capital Restructuring And Debt Management, ",
+      "Financial Planning & Strategic Investments, Employees Coaching, Capital-Restructuring And Debt Management, ",
   },
   {
     id: "feature-2",
     icon: "",
     title: "For Individuals / Families",
     content:
-      "Personalized Financial Planning, Investment Strategies & Opportunities, Debt management and reduction strategies, Lifestyle financial planning and budgeting assistance ",
+      "Personalized Financial Planning, Investment Strategies & Opportunities, Debt-management and reduction strategies, Lifestyle financial planning and budgeting assistance ",
   },
   {
     id: "feature-3",
     icon: "",
     title: "For Groups / Stokvels",
     content:
-      "Financial literacy workshops and seminars,  investment education sessions, Retirement planning masterclasses, Real estate investment",
+      "Financial literacy workshops and seminars,  investment education sessions, Retirement planning masterclasses, Real-estate investment",
   },
 ];
 

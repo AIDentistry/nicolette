@@ -4,7 +4,7 @@ import nicolettevideo from "../assets/nicolettevideo.mp4";
 
 const NicoletteVideo = () => {
   return (
-    <video width="full" height="full" autoPlay loop muted>
+    <video width="full" height="full" autoPlay loop muted className="">
       <source src={nicolettevideo} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
